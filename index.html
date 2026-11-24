@@ -2,190 +2,209 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Privacy Policy for Chess Game.">
-  <title>Privacy Policy | Chess Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – Chess</title>
   <style>
     :root {
-      --green: #28765f;
-      --text: #292d2b;
-      --muted: #68716d;
-      --line: #e7ebe8;
-      --background: #f5f7f5;
-      --surface: #ffffff;
+      --bg: #faf8f4;
+      --text: #2b2620;
+      --muted: #7a7062;
+      --accent: #8a5a2b;
+      --accent-dark: #2b2117;
+      --gold: #e9c46a;
+      --line: #e6e0d6;
+      --code-bg: #f0ebe2;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      padding: 28px 16px;
-      background: var(--background);
+      background: var(--bg);
       color: var(--text);
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
     }
     main {
-      width: 100%;
-      max-width: 780px;
+      max-width: 720px;
       margin: 0 auto;
-      padding: 30px 34px;
-      background: var(--surface);
-      border: 1px solid var(--line);
+      padding: 28px 20px 40px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+    .logo {
+      width: 56px;
+      height: 56px;
+      flex: none;
       border-radius: 14px;
-      box-shadow: 0 5px 24px rgba(20, 40, 30, .04);
+      background: var(--accent-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .app-label {
-      display: inline-block;
-      margin-bottom: 10px;
-      color: var(--green);
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: .09em;
-      text-transform: uppercase;
-    }
+    .logo svg { width: 34px; height: 34px; }
     h1 {
-      margin: 0 0 6px;
-      font-size: clamp(27px, 5vw, 34px);
+      margin: 0;
+      font-size: 28px;
       line-height: 1.2;
     }
-    .subtitle { margin: 0; color: var(--muted); }
-    .meta {
-      margin: 20px 0 26px;
-      padding: 12px 14px;
-      background: #f4f8f5;
-      border-radius: 8px;
-      color: #53615a;
-      font-size: 13px;
+    .subtitle {
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-size: 15px;
     }
     section {
-      padding: 19px 0;
       border-top: 1px solid var(--line);
+      padding-top: 18px;
+      margin-top: 22px;
     }
     h2 {
-      margin: 0 0 9px;
-      color: var(--green);
-      font-size: 18px;
-      line-height: 1.35;
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 19px;
     }
-    p { margin: 0 0 10px; }
-    ul { margin: 8px 0 0; padding-left: 22px; }
-    li { margin: 4px 0; }
-    a { color: var(--green); overflow-wrap: anywhere; }
+    p { margin: 0 0 12px; }
+    ul { margin: 0 0 12px; padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    code {
+      background: var(--code-bg);
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+      word-break: break-all;
+    }
+    .note { color: var(--muted); }
+    a { color: var(--accent); }
     footer {
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 12px;
+      margin-top: 36px;
       text-align: center;
-    }
-    @media (max-width: 520px) {
-      body { padding: 12px 9px; }
-      main { padding: 23px 19px; border-radius: 10px; }
-      section { padding: 16px 0; }
-      h2 { font-size: 17px; }
+      color: var(--muted);
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <main>
-    <header>
-      <span class="app-label">Chess Game</span>
+<main>
+  <header>
+    <div class="logo" aria-hidden="true">
+      <!-- King piece -->
+      <svg viewBox="0 0 100 100">
+        <rect x="47" y="6" width="6" height="18" rx="1.5" fill="#e9c46a"/>
+        <rect x="41" y="11" width="18" height="6" rx="1.5" fill="#e9c46a"/>
+        <path d="M22 47 L28 23 L38 36 L50 20 L62 36 L72 23 L78 47 Z" fill="#e9c46a"/>
+        <rect x="22" y="45" width="56" height="11" rx="3" fill="#e9c46a"/>
+        <path d="M35 56 L65 56 L74 75 L26 75 Z" fill="#e9c46a"/>
+        <rect x="20" y="74" width="60" height="13" rx="4" fill="#e9c46a"/>
+      </svg>
+    </div>
+    <div>
       <h1>Privacy Policy</h1>
-      <p class="subtitle">Chess – Play Against Computer</p>
-      <div class="meta"><strong>Last updated:</strong> November 24, 2026</div>
-    </header>
+      <p class="subtitle">Chess application</p>
+    </div>
+  </header>
 
-    <section>
-      <h2>1. Introduction</h2>
-      <p>This Privacy Policy explains how the Chess Game application handles user information.</p>
-      <p>The application is an offline chess game that allows users to play against the computer. We respect your privacy and are committed to protecting your information.</p>
-      <p>The application does not require an internet connection, does not display advertisements, and does not require user registration or account creation.</p>
-    </section>
+  <p>
+    This Privacy Policy applies to the Chess Android application
+    (<code>com.chess.gamehythm</code>), a chess game played against a computer
+    opponent that runs entirely on the user's device.
+  </p>
 
-    <section>
-      <h2>2. Information We Collect</h2>
-      <p>The application does not collect, store, or transmit any personally identifiable information.</p>
-      <p>We do not collect:</p>
-      <ul>
-        <li>Names or email addresses.</li>
-        <li>Phone numbers or contact information.</li>
-        <li>Location data.</li>
-        <li>Personal files, photos, or media.</li>
-        <li>Device identifiers for tracking purposes.</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Information We Collect</h2>
+    <p>
+      The application does not collect, store, or transmit any personal information
+      or usage data. No information is sent to the developer or to any third party.
+    </p>
+  </section>
 
-    <section>
-      <h2>3. Game Data Handling</h2>
-      <p>All chess gameplay takes place locally on the user's device.</p>
-      <p>The application does not transmit chess moves, game progress, or gameplay information to external servers.</p>
-      <p>If the application saves game settings or progress, this information remains stored locally on the device.</p>
-    </section>
+  <section>
+    <h2>Gameplay Data</h2>
+    <p>
+      The game, including the computer opponent, runs locally on the device. The
+      current game (board position, move history, and chosen difficulty) is kept
+      only in the application's memory while it is being played and is never
+      uploaded or shared.
+    </p>
+    <p>
+      The application does not require an account, sign-in, or an internet
+      connection to work.
+    </p>
+  </section>
 
-    <section>
-      <h2>4. Permissions</h2>
-      <p>The application does not require access to sensitive device permissions, such as:</p>
-      <ul>
-        <li>Camera.</li>
-        <li>Microphone.</li>
-        <li>Contacts.</li>
-        <li>Location.</li>
-        <li>Photos or media.</li>
-      </ul>
-      <p>The game can be used without granting these permissions.</p>
-    </section>
+  <section>
+    <h2>Permissions</h2>
+    <p>
+      The application does not request any Android permissions.
+    </p>
+    <p class="note">
+      The application does not request access to the internet, storage, camera,
+      microphone, location, or contacts.
+    </p>
+  </section>
 
-    <section>
-      <h2>5. Third-Party Libraries</h2>
-      <p>The application may use standard development libraries required for its operation.</p>
-      <p>The application does not intentionally integrate advertising, analytics, or tracking services that collect personal user information.</p>
-    </section>
+  <section>
+    <h2>Third-Party Libraries</h2>
+    <p>
+      The application is built with open-source libraries (AndroidX and Jetpack
+      Compose) that operate entirely on the device and do not transmit any data.
+      The application contains no advertising, analytics, or tracking services.
+    </p>
+  </section>
 
-    <section>
-      <h2>6. Sharing Information</h2>
-      <p>We do not sell, share, or transfer users' personal information to third parties.</p>
-      <p>The application does not communicate gameplay data to external servers.</p>
-    </section>
+  <section>
+    <h2>Sharing the Application</h2>
+    <p>
+      The share feature opens the system share sheet in order to send a link to
+      the application only. The application does not access the user's contacts or
+      messages.
+    </p>
+  </section>
 
-    <section>
-      <h2>7. Children's Privacy</h2>
-      <p>The application does not knowingly collect personal information from children or any other users.</p>
-      <p>Since the game does not collect personal information, users can enjoy the game without providing personal details.</p>
-    </section>
+  <section>
+    <h2>Children's Privacy</h2>
+    <p>
+      The application does not collect data from any user, including children.
+    </p>
+  </section>
 
-    <section>
-      <h2>8. User Control and Data Deletion</h2>
-      <p>Users do not need to create an account or provide personal information to use the application.</p>
-      <p>Any locally stored game data or settings can be removed by clearing the application's data or uninstalling the application from the device.</p>
-    </section>
+  <section>
+    <h2>User Control and Data Deletion</h2>
+    <p>
+      As no data is retained by the developer, there is nothing to delete.
+      Uninstalling the application removes all of its data from the device.
+    </p>
+  </section>
 
-    <section>
-      <h2>9. Google Play Data Safety</h2>
-      <p>Based on the application's current functionality:</p>
-      <ul>
-        <li>Data collected: None.</li>
-        <li>Data shared with third parties: None.</li>
-        <li>Advertising: None.</li>
-        <li>Account creation: Not required.</li>
-        <li>Internet connection: Not required for gameplay.</li>
-        <li>Data encryption in transit: Not applicable to offline gameplay.</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Google Play Data Safety</h2>
+    <ul>
+      <li>Data collected: None.</li>
+      <li>Data shared with third parties: None.</li>
+      <li>Advertising: None.</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>10. Changes to This Privacy Policy</h2>
-      <p>We may update this Privacy Policy when necessary to reflect changes in the application's features or functionality.</p>
-      <p>Any updates will be published on this page, along with the revised update date.</p>
-    </section>
+  <section>
+    <h2>Changes to This Policy</h2>
+    <p>
+      This policy may be updated when new features are introduced. The most recent
+      version will be published on this page together with the date of the update.
+    </p>
+  </section>
 
-    <section>
-      <h2>11. Contact Us</h2>
-      <p>If you have any questions or concerns regarding this Privacy Policy, please contact us:</p>
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:ahmedahmed13567oki1@gmail.com">ahmedahmed13567oki1@gmail.com</a></li>
-      </ul>
-    </section>
+  <section>
+    <h2>Contact</h2>
+    <p>
+      For any inquiries regarding this policy, please contact:
+      <a href="mailto:ahmedg5538@gmail.com">ahmedg5538@gmail.com</a>
+    </p>
+  </section>
 
-    <footer>© 2026 Chess – Play Against Computer. All rights reserved.</footer>
-  </main>
+  <footer>Last updated: November 24, 2026</footer>
+</main>
 </body>
 </html>
